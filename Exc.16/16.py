@@ -8,4 +8,16 @@
 #     3
 #     -> 1
 
-
+from random import randint
+list_1 = []
+print("Введите размер массива")
+n = int(input())
+print("Введите число Х [1; 10], которое будем искать в массиве")
+searchNum = int(input())
+count = 0
+for _ in range(n):
+    t = randint(1, 10)    
+    if t == searchNum: count = count + 1
+    list_1.append(t)  
+print(*list_1) 
+print(f'В данном массиве X = {searchNum} содержится: {count} раз')   
