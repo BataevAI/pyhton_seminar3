@@ -11,12 +11,6 @@
 from random import randint
 from math import *
 list_1 = []
-print("Введите размер массива")
-n = int(input())
-print("Введите диапазоны массива")
-left = int(input())
-right = int(input())
-print(f"Введите число Х [{left}; {right}], которое будем искать в массиве")
 
 # метод создания списка случайных элементов с границами - left и right
 
@@ -28,6 +22,14 @@ def randList(n, left1, right1):
     print(*list_1)
     return list_1
 
+print("Введите размер массива")
+n = int(input())
+print("Введите диапазоны массива")
+print("Введите минимальное число массива")
+left = int(input())
+print("Введите максимальное число массива")
+right = int(input())
+print(f"Введите число Х [{left}; {right}], которое будем искать в массиве")
 
 list_2 = randList(n, left, right)
 # # search - наше искомое число в списке
